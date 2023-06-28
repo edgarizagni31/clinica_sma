@@ -1,0 +1,43 @@
+---
+import Card from '../components/Card.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title='Clinica SMA | Especialidades'>
+  <section class="w-full bg-[url('/background.jpg')] overflow-auto py-3">
+    <h1 class='text-center text-2xl mb-4 font-bold'>Nuestras especialidades</h1>
+
+    <article class='grid grid-cols-1 md:grid-cols-3 gap-2 w-full px-4'>
+      <Card
+        image='/specialties/rayos-x.png'
+        title='Rayos x'
+        body='Consiste en una prueba que permite captar estructuras óseas, metálicas, tejido blando, aire y agua. Nos permite el diagnóstico médico de enfermedades del esqueleto y tejido blando, como neumonía, tuberculosis, cáncer de pulmón, traumatismos óseos y fracturas.'
+      />
+      <Card
+        image='/specialties/electrocardiograma.jpg'
+        title='Electrocardiograma'
+        body='Nuestro electrocardiograma y electrocardiógrafo permite un adecuado examen de la función eléctrica del corazón. Asi detectar a tiempo diversas patologías cardiacas, familiares o laborales a trabajadores en general en las diversas funciones que desempeñen.'
+      />
+      <Card
+        image='/specialties/espirometria.jpg'
+        title='Espirometría'
+        body='Consta de una prueba respiratoria sencilla, bajo circunstancias controladas, que miden la magnitud absoluta de las capacidades y los volúmenes pulmonares y la rapidez con que estos puede ser movilizados. Contamos con un espirómetro por lo cual nos permite tener los resultados en forma número, fundamentos en cálculos sencillos y en forma de impresión gráfica.'
+      />
+      <Card
+        image='/specialties/audiometria.jpg'
+        title='Audiometría'
+        body='Es una prueba que nos permite valorar la capacidad auditiva en primera instancia. Establece el mínimo y máximo nivel de intensidad sonora que es percibido por el paciente (umbral auditivo). El objetivo principal es detectar oportunamente posibles perdidas auditivas, con fin de prevenir y evitar su progresión cuando ya este presente.'
+      />
+      <Card
+        image='/specialties/oftamologia.jpg'
+        title='Oftalmología'
+        body='Nuestro programa de mantenimiento y conservación de la salud visual y ocular es preventivo y correctivo, con el fin de disminuir las tasas de incidencias de alteraciones relacionadas con los factores de riesgo los cuales está sometido el trabajador, detectándolas y controlándolos a fin de disminuir las incomodidades de sus colaboradores en sus puestos de trabajo.'
+      />
+      <Card
+        image='/specialties/laboratorio.jpg'
+        title='Laboratorio'
+        body='En nuestro laboratorio clínico y especializado con microcentrifugas, centrifugas, microscopio electrónico y equipo automatizado de bioquímica ofrecemos. Continuamente estamos agregando y evaluando nuevos procedimientos de acuerdo a las necesidades ocupacionales de las empresas y los riesgos a los que están expuestos los trabajadores.'
+      />
+    </article>
+  </section>
+</Layout>
