@@ -1,0 +1,93 @@
+---
+import { BsMailbox } from 'react-icons/Bs';
+import { FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
+---
+
+<aside
+  class='absolute opacity-90 text-white bg-black absolute inset-0 z-10 grid grid-rows-3 gap-4 hidden'
+  id='sidebar'
+>
+  <button
+    class='btn btn-ghost btn-circle absolute top-0 right-4'
+    id='close_sidebar'
+  >
+    &times;</button
+  >
+  <header class='self-center'>
+    <h1 class='text-4xl text-center font-bold'>Clinica San Miguel Arcangel</h1>
+  </header>
+
+  <ul
+    class='grid grid-cols-1 gap-2 md:grid-cols-3 md:gap-4 justify-self-center'
+  >
+    <li class='flex flex-col'>
+      <a href='/' class='text-lg font-bold mb-4 text-center md:text-left'
+        >Inicio</a
+      >
+      <a href='/conocenos' class='hidden md:block text-md'>Conocenos</a>
+    </li>
+
+    <li class='flex flex-col md:hidden'>
+      <a href='/conocenos' class='text-lg font-bold mb-4 text-center'
+        >Conocenos</a
+      >
+    </li>
+
+    <li class='flex flex-col'>
+      <a
+        href='/especialidades'
+        class='text-lg font-bold mb-4 text-center md:text-left'
+        >Especialidades</a
+      >
+      <ul class='hidden md:block'>
+        <li class='mb-2'>Rayos x</li>
+        <li class='mb-2'>Electrocardiograma</li>
+        <li class='mb-2'>Audiometria</li>
+        <li class='mb-2'>Oftalmologia</li>
+        <li class='mb-2'>Laboratorio</li>
+      </ul>
+    </li>
+
+    <li class='flex flex-col'>
+      <a href='/servicios' class='text-lg font-bold text-center md:text-left'
+        >Servicios</a
+      >
+    </li>
+  </ul>
+
+  <footer
+    class='grid grid-cols-1 md:grid-cols-3 text-gray-300 p-4 md:justify-items-center w-full'
+  >
+    <div>
+      <h4 class='font-bold flex items-center uppercase text-xs mb-2'>
+        <FaMapMarkerAlt className='mr-2 text-xs' />
+        Dirección
+      </h4>
+      <p class='text-xs md:text-md'>Urbanizacion San felipe MZ Lt5</p>
+    </div>
+    <div>
+      <h4 class='font-bold flex items-center uppercase text-xs mb-2'>
+        <BsMailbox className='mr-2 text-xs' />
+        Correo
+      </h4>
+      <p class='text-xs md:text-md'>admision@centrosalud-sma.com</p>
+    </div>
+    <div>
+      <h4 class='font-bold flex items-center uppercase text-xs mb-2'>
+        <FaPhone className='mr-2 text-xs' />
+        Telefono
+      </h4>
+      <p class='text-xs md:text-md'>+51 952 017 276</p>
+    </div>
+  </footer>
+</aside>
+
+<script>
+  const btn = document.getElementById('close_sidebar');
+
+  if (btn) {
+    btn.addEventListener('click', () => {
+      document.getElementById('sidebar')?.classList.add('hidden');
+    });
+  }
+</script>
