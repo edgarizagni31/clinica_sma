@@ -1,6 +1,5 @@
 ---
-import { BsMailbox } from 'react-icons/Bs';
-import { FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
+import { Icon } from 'astro-icon';
 ---
 
 <aside
@@ -59,22 +58,24 @@ import { FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
     class='grid grid-cols-1 md:grid-cols-3 text-gray-300 p-4 md:justify-items-center w-full'
   >
     <div>
-      <h4 class='font-bold flex items-center uppercase text-xs mb-2'>
-        <FaMapMarkerAlt className='mr-2 text-xs' />
+      <h4 class='font-bold flex items-center uppercase text-xs mb-2 gap-2'>
+        <Icon name='mdi:map-marker' width='12' height='12' />
         Dirección
       </h4>
       <p class='text-xs md:text-md'>Urbanizacion San felipe MZ Lt5</p>
     </div>
     <div>
-      <h4 class='font-bold flex items-center uppercase text-xs mb-2'>
-        <BsMailbox className='mr-2 text-xs' />
+      <h4 class='font-bold flex items-center uppercase text-xs mb-2 gap-2'>
+        <Icon name='ic:baseline-mail' width='12' height='12' />
+
         Correo
       </h4>
       <p class='text-xs md:text-md'>admision@centrosalud-sma.com</p>
     </div>
     <div>
-      <h4 class='font-bold flex items-center uppercase text-xs mb-2'>
-        <FaPhone className='mr-2 text-xs' />
+      <h4 class='font-bold flex items-center uppercase text-xs mb-2 gap-2'>
+        <Icon name='ic:baseline-phone' width='12' height='12' />
+
         Telefono
       </h4>
       <p class='text-xs md:text-md'>+51 952 017 276</p>
